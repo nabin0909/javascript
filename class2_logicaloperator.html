@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical operator</title>
+</head>
+
+<body>
+    <script>
+        // and &&(and) (give true when two expression are true otherwise it give false)
+        //||(or) give true if one expression is true otherwise false
+        // !- reverse the expression if expression is true it give false, and viceversa
+        const x = 5
+        const y = 10
+        document.write(`${!(x > 4 || y < 4)}`)
+
+
+        function fizzBuzz(number) {
+            if (number % 3 === 0 && number % 5 === 0) {
+                return 'FizzBuzz';
+            } else if (number % 3 === 0) {
+                return 'Fizz';
+            } else if (number % 5 === 0) {
+                return 'Buzz';
+            } else {
+                return number.toString();
+            }
+        }
+
+        // Example usage:
+        for (let i = 1; i <= 100; i++) {
+            console.log(fizzBuzz(i));
+        }
+    </script>
+</body>
+
+</html>
