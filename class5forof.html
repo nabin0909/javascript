@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of</title>
+</head>
+
+<body>
+    <script>
+        let game = ['football', 'basketball', 'vollyball']
+        for (let x of game) {
+            document.write(`${x}<br>`)
+        }
+        // for in is used for itersblre object
+
+        document.write(`<br>`)
+        let student = {
+            fname: 'nabin',
+            lname: 'dangol',
+            age: '23',
+            height: '5.5',
+        }
+        for (let y in student) {
+            document.write(`${student[y]}<br>`)
+        }
+        values = ['one', 'two', 'three']
+        for (let i in values) {
+            document.write(`${values[i]}<br>`)
+        }
+    </script>
+
+</body>
+
+</html>

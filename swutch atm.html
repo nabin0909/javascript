@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using switch making ATM</title>
+</head>
+
+<body>
+    <script>
+        const pin = 1234;
+        const userPin = Number(prompt("Enter your PIN"));
+
+        if (userPin === pin) {
+            alert('Welcome to ATM dashboard');
+            const option = Number(prompt("Choose one option below:\n1. Fast Cash\n2. Withdraw\n3. Balance Sheet\n4. Cancel"));
+
+            switch (option) {
+                case 1:
+                    alert("Fast Cash");
+                    const fastCash = Number(prompt("Choose one option below:\n1. 1000\n2. 2000\n3. 5000\n4. 10000"));
+                    switch (fastCash) {
+                        case 1:
+                            document.write("You have withdrawn 1000<br>");
+                            break;
+                        case 2:
+                            document.write("You have withdrawn 2000<br>");
+                            break;
+                        case 3:
+                            document.write("You have withdrawn 5000<br>");
+                            
+                            break;
+                        case 4:
+                            document.write("You have withdrawn 10000<br>");
+                            break;
+                        default:
+                            document.write("Invalid option for Fast Cash<br>");
+                            break;
+                    }
+                    break;
+                case 2:
+                    const withdrawAmount = Number(prompt("Enter the amount to withdraw:"));
+                    document.write(`You have withdrawn ${withdrawAmount}<br>`);
+                    break;
+                case 3:
+                    const balance = 50000; // example balance
+                    document.write(`Your balance is ${balance}<br>`);
+                    break;
+                case 4:
+                    document.write("Transaction cancelled<br>");
+                    break;
+                default:
+                    document.write("Invalid option<br>");
+                    break;
+            }
+        } else {
+            alert("Invalid PIN");
+        }
+    </script>
+</body>
+
+</html>

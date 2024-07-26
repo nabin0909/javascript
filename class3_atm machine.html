@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Teller Machine</title>
+</head>
+
+<body>
+    <script>
+        const pin = 1234;
+        const userpin = Number(prompt("Enter your PIN"));
+
+        if (userpin === pin) {
+            alert('Welcome to ATM dashboard');
+            const num = Number(prompt("Choose one option below:\n1. Fast Cash\n2. Withdraw\n3. Balance Sheet\n4. Cancel"));
+
+            if (num === 1) {
+                alert("Fast Cash");
+                const fastCash = Number(prompt("Choose one option below:\n1. 1000\n2. 2000\n3. 5000\n4. 10000"));
+                if (fastCash === 1) {
+                    alert("You have withdrawn 1000");
+                } else if (fastCash === 2) {
+                    alert("You have withdrawn 2000");
+                } else if (fastCash === 3) {
+                    alert("You have withdrawn 5000");
+                } else if (fastCash === 4) {
+                    alert("You have withdrawn 10000");
+                } else {
+                    alert("Invalid option");
+                }
+
+
+
+
+
+
+
+
+            } else if (num === 2) {
+                alert(" cash Withdraw");
+                const num = Number(prompt("you withdrawl your money"));
+                if (num <= 20000) {
+                    alert("you have successfuly withdraw your money")
+                }
+                else {
+                    alert(" insufficent balance")
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            } else if (num === 3) {
+                alert("Balance Statement 20000");
+
+
+
+
+
+
+
+            } else if (num === 4) {
+                alert("Logout");
+                alert("thank you for visiting us ")
+
+            } else {
+                alert("Invalid option");
+
+            }
+        } else {
+            alert("Incorrect PIN");
+        }
+    </script>
+</body>
+
+</html>
