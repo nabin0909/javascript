@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return type</title>
+</head>
+
+<body>
+    <script>
+
+
+        const x = Number(prompt("enter the first numner"))
+        const y = Number(prompt("enter the second numner"))
+        const z = Number(prompt("enter the third numner"))
+        function substracrtion(a, b, c) {
+            const sum = a + b + c
+            const percentage = sum / 300 * 100
+            if (percentage >= 80) {
+                return `a grade with ${percentage}%`
+            }
+            else if (percentage >= 60 && percentage <= 79) {
+                return `b grade with ${percentage}%`
+
+
+            }
+            else if (percentage >= 40 && percentage <= 59) {
+                return `c grade with ${percentage}%`
+
+            }
+            else {
+                return `fail  grade with ${percentage}%`
+            }
+            const grade = substracrtion(x, y, z)
+            document.write(`${grade}`)
+        }
+        const grade = substracrtion(x, y, z)
+        document.write(`${grade}`)
+
+    </script>
+
+</body>
+
+</html>
