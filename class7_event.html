@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event </title>
+
+</head>
+
+<body>
+    <pre>
+        event are action or occurance that takes place when user interact with web pages 
+        <li>onclick</li>
+        <li> ondb clink</li>
+        <li>on submit</li>
+        <li> on change</li>
+        <li> onkey</li>
+        <li>one key down</li>
+        <li> onmouseover </li>
+        <li>one mouse move</li>
+        <li>on mouse out</li>
+    </pre>
+    <button onclick="demoFunction()" ondblclick="empty()"> click me </button>
+    <h2 id="heading" class="two " style="background-color: brown;"></h2>
+    <h1 class="two" style="background-color:aquamarine"></h1>
+    <h3 class="two" style="background-color:aqua"></h3>
+    <button onclick="testFunction"></button>
+    <script>
+        const demoFunction = () => {
+            document.querySelector('#heading').innerHTML = new Date()
+            document.getElementById('heading').style.backgroundColor = 'black'
+            document.getElementById('heading').style.color = "white"
+
+        }
+        const empty = () => {
+            document.querySelector('h2').innerHTML = ''
+        }
+    </script>
+
+</body>
+
+</html>
