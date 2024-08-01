@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="flex justify-between item-center bg-red-200 px-10 py-4">
+        <h1 class="text-yellow-800 font-bold text-3xl"> title </h1>
+        <ul class="hidden lg:flex ">
+            <li><a href="#" class="me-5 hover:underline ">home</a></li>
+            <li><a href="#" class="me-5 hover:underline ">product</a></li>
+            <li><a href="#" class="me-5 hover:underline ">service</a></li>
+            <li><a href="#" class="me-5 hover:underline ">blog</a></li>
+            <li><a href="#" class="me-5 hover:underline ">about</a></li>
+        </ul>
+        <ul class="block lg:hidden">
+            <button class="bg-blue-700 py-2 px-5 block lg:hidden" onclick="togglebar()">menu </button>
+            <ul class="absulute bg-blue-700 text-center top-18 hidden" id="mobilenav" onclick="hiddenNavbar()" < li><a
+                    href="#" class="me-5 hover:underline ">home</a></li>
+                <li><a href="#" class="me-5 hover:underline ">product</a></li>
+                <li><a href="#" class="me-5 hover:underline ">service</a></li>
+                <li><a href="#" class="me-5 hover:underline ">blog</a></li>
+                <li><a href="#" class="me-5 hover:underline ">about</a></li>
+
+            </ul>
+
+
+        </ul>
+    </nav>
+    <script>
+        const togglebar = () => {
+            document.getElementById('mobilenav').className = `block`
+
+
+        }
+        const hiddenNavbar = () => {
+            document.getElementById('mobilenav').className = `hidden`
+        }
+
+
+    </script>
+
+</body>
+
+</html>

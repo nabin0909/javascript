@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array method</title>
+</head>
+
+<body>
+    <script>
+        let p_language = [' javascript', 'python', 'php', 'java']
+        console.log(`${p_language}`)
+        console.log(`${p_language.length}`)
+        console.log(`${p_language[0][1]}`)
+        p_language.push('golang')//adding the value or element
+        console.log(`${p_language}`)
+
+        p_language.pop()
+        console.log(`${p_language}`)
+        p_language.unshift(`Dart`)
+        console.log(`${p_language}`)
+        p_language.shift()
+        console.log(`${p_language}`)
+        p_language.splice(1, 2, 'rush')
+        console.log(`${p_language}`)
+
+
+
+
+        console.log(`${p_language.sort()}`)// to arrenge the element of array in assending order
+        console.log(`${p_language.reverse()}`)
+
+        let m_language = ['animal', 'bird']
+        document.write(`${m_language.concat(p_language)}`)
+
+
+    </script>
+
+</body>
+
+</html>
