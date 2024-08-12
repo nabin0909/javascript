@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+
+            constructor(name, position) {
+                this.name = name
+                this.position = position
+            }
+            show() {
+                return `studentname is ${this.name}. student position is${this.position}`
+            }
+        }
+        const obj_hero = new student('om', ' full stack developer')
+        const obj_zero = new student('prakash sharma', ' full stack developer')
+
+        document.write(obj_hero.name)
+        document.write(obj_zero.name, "<br>")
+        document.write(obj_zero.show())
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object without class</title>
+
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>firstname</th>
+                <th> lastname</th>
+                <th>education</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>nabin</td>
+                <td>dangol</td>
+                <td>phd </td>
+            </tr>
+
+    </table>
+    <script>
+        const dur_student = {
+
+
+            firstname: ' mr',
+            lastname: 'bean',
+            education: 'phd holder'
+        }
+        document.write(dur_student)
+        document.getElementById('fname').innerHTML = `${dur_student.firstname}`
+        document.getElementById('lname').innerHTML = `${dur_student.lastname}`
+        document.getElementById('e').innerHTML = `${dur_student.education}`
+
+    </script>
+
+
+</body>
+
+</html>

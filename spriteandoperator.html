@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator</title>
+</head>
+
+<body>
+    <script>
+        const arr1 = [1, 2, 3, 4, 5]
+        const arr2 = [5, 4, 3, 2, 1]
+        const arr = [...arr1, ...arr2]
+
+
+        //rest operator
+        const name = ['nabin', 'flower', 'animal', 'water']
+        const [hello, an_student, ...rest] = name
+        document.write(`${hello}<br>`)
+        document.write(`${an_student}<br>`)
+
+        document.write(`${rest}<br>`)
+
+
+
+    </script>
+
+</body>
+
+</html>

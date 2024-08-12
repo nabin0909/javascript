@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>locol storage </title>
+</head>
+
+<body>
+    <button> remove</button>
+    <h2 style="color: aquamarine;"></h2>
+    <script>
+        localStorage.setItem('data', ' welcome to durshiksya')
+        const show = localStorage.getItem('data')
+        console.log(show)
+
+
+
+        const b = document.querySelector('button')
+        b.addEventListener('click', () => {
+            localStorage.removeItem('data')
+        })
+
+
+        // json  javascript object notation
+        const sstudent = {
+            'firstname': 'ashish ',
+            'lastname': 'shrestha',
+            'education': 'bachelor',
+            'age': '18'
+        }
+        localStorage.setItem('student', JSON.stringify(sstudent))
+        const show_item = JSON.parse(localStorage.getItem('student'))
+        document.write(show_item.firstname, show_item.lastname)
+        document.querySelector('h2').innerHTML = `${show_item.lastname}`
+
+    </script>
+
+
+</body>
+
+</html>
