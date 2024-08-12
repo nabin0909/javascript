@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array distruction</title>
+</head>
+
+<body>
+    <script>
+        const email = ['animal@gmail.com', 'parrot@gmail.com', 'dog@gmail.com', ' sparrow@gamail.com']
+        const show = ([firstmail, ...rest]) => {
+            return ` the first email is <b>${firstmail}</b> and rest are ${rest}`
+        }
+        document.write(show(email))
+
+    </script>
+
+</body>
+
+</html>
